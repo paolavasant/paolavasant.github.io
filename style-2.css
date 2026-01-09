@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* -------------------- VARIABLES -------------------- */
+:root {
+    --pink: #DC6FE8;
+    --green: #E6F8B9;
+    --purple: #7369FA;
+    --dark: #202020;
+    --gray: #fafafa;
+}
+
+/* -------------------- BASE -------------------- */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: var(--dark);
+    background-color: var(--gray);
+}
+
+main {
+    padding: 20px 15% 60px;
+}
+
+/* -------------------- TYPOGRAPHY -------------------- */
+h1 {
+    font-family: "Cascadia Code";
+    font-size: 40px;
+    color: var(--purple);
+}
+
+h2 {
+    font-family: "Cascadia Code";
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    font-size: 28px;
+    color: var(--purple);
+    margin: 20px auto 30px;
+}
+
+h3 {
+    font-family: "Cascadia Code";
+    font-size: 20px;
+    max-width: 720px;
+    margin: 30px auto 0;
+}
+
+.text-block {
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+    margin: 5% 5% 0;
+}
+
+.section-block {
+    margin-top: 7%;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999 !important;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--gray);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+}
+
+header .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--pink);
+}
+
+header .subtitle {
+    font-family: "Cascadia Code";
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-btn {
+    padding: 7px 25px;
+    border-radius: 20px;
+    border: 1px solid var(--pink);
+    background: var(--gray);
+    color: var(--pink);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.nav-btn:hover {
+    background: var(--pink);
+    color: white;
+}
+.nav-btn:active {
+            transform: translateY(0);
+        }
+
+/* -------------------- PORTFOLIO GRID -------------------- */
+.portfolio {
+    max-width: 80%;
+    padding: 60px 20% 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 40px;
+}
+
+.item {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: 0.25s ease;
+}
+
+.item:hover {
+    transform: translateY(-6px);
+    color: var(--pink);
+}
+
+/* ------------------ HERO ------------------ */
+
+/* Contenedor del hero */
+.hero-container {
+    margin-top: 25px;
+    width: 100%;
+}
+
+/* Imagen panorámica (usa tu img-box) */
+.hero-img {
+    width: 100%;
+    aspect-ratio: 16 / 6;   /* la proporción que ya tenías */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Imagen adaptable dentro de ítems */
+.item .img-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #eaeaea;
+    transition: 0.3s ease;
+}
+
+.item .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.item:hover .img-container img {
+    transform: scale(1.15);
+    filter: brightness(0.55);
+}
+
+.item-title {
+    font-family: "Cascadia Code";
+    color: var(--purple);
+    font-size: 24px;
+    margin: 30px 0 10px;
+    font-weight: 600;
+}
+.item:hover .item-title {
+    color: var(--pink);
+}
+
+.tags {
+    display: flex; /* o inline-flex */
+    gap: 20px; 
+}
+
+.tag {
+    font-size: 16px;
+    font-family: "Cascadia Code";
+    font-style: italic;
+    background: var(--green);
+    padding: 3px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.description {
+    margin-bottom: 3%;
+    font-size: 16px;
+}
+/* -------------------- UNIVERSAL IMAGE BOX SYSTEM -------------------- */
+
+.three-grid {
+    margin: 5% 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.two-grid {
+    margin: 5% 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.img-box {
+    width: 100%;
+    background: #dcdcdc;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Proporción por GRID (Opción 2) */
+.grid-16x7 .img-box { aspect-ratio: 16 / 7; }
+.grid-3x2  .img-box { aspect-ratio: 3 / 2; }
+.grid-8x10 .img-box { aspect-ratio: 8 / 10; }
+.grid-4x3  .img-box { aspect-ratio: 4 / 3; }
+.grid-1x1  .img-box { aspect-ratio: 1 / 1; }
+
+/* Imagen interna */
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -------------------- ABOUT SECTION -------------------- */
+.about {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0 40px;
+}
+
+.about-photo {
+    width: 400px;
+    aspect-ratio: 3 / 4;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 550px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 4%;
+}
+
+.about-buttons {
+    display: flex;
+    gap: 50px;
+    margin-top: 15%;
+}
+
+.btn {
+    padding: 10px 35px;
+    border-radius: 20px;
+    font-weight: 600;
+    background: var(--green);
+    color: var(--dark);
+    transition: 0.2s;
+}
+.btn:hover {
+    transform: scale(1.07);
+}
+
+/* PROJECT NAVIGATION */
+.project-navigation {
+    max-width: 600px;
+    margin: 80px auto 0;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.project-nav-btn {
+    padding: 18px 30px;
+    border-radius: 16px;
+    background: var(--green);
+    color: var(--dark);
+    font-family: "Cascadia Code";
+    font-size: 16px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.25s ease;
+}
+
+.project-nav-btn:hover {
+    background: var(--pink);
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* alineación visual */
+.project-nav-btn.prev { justify-content: flex-start; }
+.project-nav-btn.next { justify-content: flex-end; }
+
+/* CASO: SOLO UN BOTÓN */
+.project-nav-btn.single {
+    grid-column: 1 / -1; /* ocupa las dos columnas */
+    justify-content: center;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .project-navigation {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .project-nav-btn {
+        justify-content: center;
+        font-size: 14px;
+    }
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+    background: var(--dark);
+    color: var(--green);
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+footer .icons a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--green);
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+    main { padding: 20px 8%; }
+    .portfolio { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .about-container { gap: 40px; }
+}
+
+/* Tablets & móviles grandes (≤768px) */
+@media (max-width: 768px) {
+    .portfolio { grid-template-columns: 1fr; }
+    .about-container { flex-direction: column; text-align: center; }
+    .about-photo { width: 85%; max-width: 350px; }
+    .about-text { max-width: 90%; }
+    .about-buttons { justify-content: center; gap: 25px; }
+    .hero-img {aspect-ratio: 4/3;}  /* más alto, más visible en móvil */
+    .three-grid { grid-template-columns: repeat(1, 1fr);}
+    .two-grid { grid-template-columns: repeat(1, 1fr);}
+    .text-block {font-size: 15px; }
+    .section-block { margin-top: 20%;}
+    .description {font-size: 13px;}
+    .three-grid { margin-top: 15%;}
+    .two-grid { margin-top: 15%;}
+    .portfolio { max-width: 90%; padding: 60px 10% 100px;}
+}
+
+/* Móviles pequeños (≤600px) */
+@media (max-width: 600px) {
+    header { flex-direction: column; align-items: flex-start; }
+    nav { margin-top: 20px; }
+    h1 { font-size: 32px; }
+    h2 { font-size: 24px; }
+    .about-text p { font-size: 14px; }
+    .btn { padding: 10px 25px; font-size: 14px; }
+    .hero-img {aspect-ratio: 4/3;}
+    .three-grid { grid-template-columns: repeat(1, 1fr);}
+}
