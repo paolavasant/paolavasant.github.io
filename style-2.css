@@ -77,15 +77,21 @@ header {
 }
 
 header .title {
+    font-family: "Montserrat";
     font-size: 24px;
     font-weight: 600;
     color: var(--pink);
+    
+}
+header a{
+    text-decoration: none;
 }
 
 header .subtitle {
     font-family: "Cascadia Code";
     font-size: 16px;
     margin-top: 6px;
+    color: var(--dark);
 }
 
 nav {
