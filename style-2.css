@@ -103,6 +103,7 @@ a {
 }
 
 .nav-btn {
+    font-family: "Montserrat";
     padding: 7px 25px;
     border-radius: 20px;
     border: 1px solid var(--pink);
@@ -218,6 +219,8 @@ a {
     margin-bottom: 3%;
     font-size: 16px;
 }
+
+
 /* -------------------- UNIVERSAL IMAGE BOX SYSTEM -------------------- */
 
 .three-grid {
@@ -233,9 +236,13 @@ a {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
+
+.grid-img{
+    margin: 5% auto;
+    max-width: 800px;
+}
 .img-box {
     width: 100%;
-    background: #dcdcdc;
     border-radius: 12px;
     overflow: hidden;
     position: relative;
@@ -305,10 +312,11 @@ a {
 .btn-rsm {
     padding: 10px 35px;
     border-radius: 20px;
-    font-weight: 600;
+    font-weight: 500;
     background: var(--green);
     color: var(--dark);
     transition: 0.2s;
+    letter-spacing: 0.5px;
 }
 .btn-cv{
     padding: 10px 35px;
@@ -317,9 +325,13 @@ a {
     background: var(--purple);
     color: var(--green);
     transition: 0.2s;
+    letter-spacing: 1px;
 }
-.btn:hover {
-    transform: scale(1.07);
+.btn-rsm:hover {
+    transform: scale(1.05);
+}
+.btn-cv:hover {
+    transform: scale(1.08);
 }
 
 /* PROJECT NAVIGATION */
