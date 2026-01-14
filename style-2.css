@@ -406,6 +406,8 @@ footer .icons a {
     color: var(--green);
 }
 
+
+
 /* -------------------- RESPONSIVE -------------------- */
 
 /* Tablets (≤1024px) */
@@ -431,6 +433,8 @@ footer .icons a {
     .three-grid { margin-top: 15%;}
     .two-grid { margin-top: 15%;}
     .portfolio { max-width: 90%; padding: 60px 10% 100px;}
+    
+
 }
 
 /* Móviles pequeños (≤600px) */
@@ -443,4 +447,14 @@ footer .icons a {
     .btn { padding: 10px 25px; font-size: 14px; }
     .hero-img {aspect-ratio: 4/3;}
     .three-grid { grid-template-columns: repeat(1, 1fr);}
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
