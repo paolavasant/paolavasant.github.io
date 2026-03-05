@@ -12,53 +12,49 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-        <header>
-            <a href="index.html" >
-                <div>
-                    <div class="title"> Paola Vasant </div>
-                    <div class="subtitle">Visual Designer /  UI Designer</div>
-                </div>
-            </a>
-
-            <nav>
-                <button class="nav-btn" onclick="location.href='index.html'">Work</button>
-                <button class="nav-btn" onclick="location.href='about.html'">About me</button>
-            </nav>
-        </header>
-
-    <main>
-        <!-- HERO IMAGE -->
-        <section class="hero-container">
-            <div class="img-box hero-img">
-                <img src="/home/posterfolio.jpg" alt="Posterfolio">
+<!------- HEADER ------>
+    <header>
+        <a href="index.html" >
+            <div>
+                <div class="title"> Paola Vasant </div>
             </div>
-        </section>
+        </a>
+    <!-------- NAVBAR -------->        
+        <nav class="navbar">
+            <a href="/index.html" class="btn nav">Portafolio</a>
+            <a href="/about.html" class="btn nav">About me</a>
+            <a href="/About/CV-Paola Vazquez.pdf" class="btn nav" target="_blank">CV</a>
+        </nav>
+    </header>
 
-        <!-- TITLE + TAGS -->
+<!-- HERO IMAGE -->
+    <section class="hero-container">
+        <div class="img-box hero-img">
+            <img src="/home/posterfolio.jpg" alt="Posterfolio">
+        </div>
+    </section>
+
+<!-- TITLE + TAGS -->
+    <article>
         <section class="title-area">
-            <h1>Posterfolio</h1>
-
+            <h1>Surfeala | Agencia</h1>
             <div class="tags">
                 <span class="tag">Visual Design</span>
+                <span class="tag">Social Media</span>
             </div>
         </section>
-
-        <!-- DESCRIPCIÓN -->
-        <section class="section-block">
-            <div class="text-block">
-                <h2>Overview</h2>
-                <p>Colección de pósters desarrollados entre 2022 y 2025, elaborados mediante diversas técnicas de diseño gráfico —incluyendo ilustración digital, manipulación fotográfica y composición tipográfica. Cada pieza forma parte de proyectos y eventos con distintos objetivos comunicativos, lo que permitió explorar enfoques conceptuales, estéticos y narrativos adaptados a distintas audiencias.</p>
-                <p>La selección refleja un proceso de desarrollo creativo integral que abarca investigación, generación de conceptos, definición de sistemas visuales y producción final. Asimismo, evidencia la capacidad de adaptar estilos, metodologías y recursos gráficos en función de las necesidades de cada proyecto, manteniendo siempre criterios de claridad, coherencia y calidad técnica.</p>
-            </div>
+        <section>
+            <h2>El Departamento de Procesos y Técnicas de Realización (ProcyTec) es uno de los cuatro espacios de trabajo donde se concentra parte del personal de docencia de la División de Ciencias y Artes para el Diseño de la Universidad Autónoma Metropolitana, Unidad Azcapotzalco.</h2>
+            <p>En este espacio conviven docentes de las licenciaturas de Arquitectura, Diseño Gráfico y Diseño Industrial, así como un amplio personal administrativo y ayudantes. <br>Durante la gestión de la Jefatura de la Dra. Alatriste, se busca renovar la identidad visual del Departamento, siendo uno de los objetivos el rediseño del sitio web. </p>
         </section>
+    </article>
 
-        <!-- MOCKS -->
+    <article>
         <section class="section-block">
-            <div class="text-block">
-                <h2>Diseño</h2>
-            </div>    
-            <div class="three-grid grid-8x10">
+            <h3>Diseño</h3>
+        </section>
+        <section class="section-image">   
+            <div class="three-grid">
                 <div class="img-box"><img src="/Posterfolio/locker_web.jpg" alt="Trueque CyAD"></div>
                 <div class="img-box"><img src="/Posterfolio/ame.jpg" alt="Congreso de envase"></div>
                 <div class="img-box"><img src="/Posterfolio/veladas astro-junio2.jpg" alt="Veladas azul"></div>
@@ -76,26 +72,36 @@
                 <div class="img-box"><img src="/Posterfolio/Alter mundus.jpg" alt="Foro Alicia"></div>
             </div>
         </section>
+    </article>
 
-        <section class="project-navigation">
-            <a href="/surfeala.html" class="project-nav-btn prev">
-                ← Proyecto anterior
-            </a>
+    <section class="project-navigation">
+        <a href="/procytec.html" class="btn projnav prev">
+            ← Proyecto anterior
+        </a>
+        <a href="/posterfolio.html" class="btn projnav next">
+            Siguiente proyecto →
+        </a>
+    </section>
 
-            <a href="/UAM-A.html" class="project-nav-btn next">
-                Siguiente proyecto →
-            </a>
-        </section>
-    </main>   
-
-    <!-- FOOTER -->
-        <footer>
-            <div class="left">2025, All rights reserved</div>
-            <div class="icons">
-                <a href="mailto:paolavasant.g@gmail.com">✉️ paolavasant.g@gmail.com</a>
-                <a href="https://www.behance.net/paovasant" target="_blank">Behance</a>
-                <a href="https://www.linkedin.com/in/paola-vasant/" target="_blank">LinkedIn</a>
+<!-------- FOOTER -------->
+        <footer class="footer">
+            <div class="footer-left">
+                © 2025. All rights reserved
             </div>
-        </footer>    
+            <div class="footer-right">
+                <a href="mailto:paolavasant.g@gmail.com">
+                    <span class="icon">✉</span>
+                    paolavasant.g@gmail.com
+                </a>
+                <a href="https://www.behance.net/paolavasant" target="_blank">
+                    <img src="Behance.svg">
+                    /paolavasant
+                </a>
+                <a href="https://www.linkedin.com/in/paola-vasant/" target="_blank">
+                    <img src="Linkedin.svg">
+                    /paolavasant
+                </a>
+            </div>
+        </footer>      
 </body>
 </html>

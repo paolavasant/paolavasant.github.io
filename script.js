@@ -1,15 +1,30 @@
-function revealOnScroll() {
-    const reveals = document.querySelectorAll('.reveal');
+const swiper = new Swiper('.slider-wrapper', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 40,
 
-    reveals.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight - 80;
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
 
-        if (isVisible) {
-            el.classList.add('visible');
-        }
-    });
-}
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
+  breakpoints: {
+    0: {
+        slidesPerView: 1
+    },
+    800: {
+        slidesPerView: 1
+    },
+    1024: {
+        slidesPerView: 1
+    }
+  }
+});
