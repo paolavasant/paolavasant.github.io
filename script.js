@@ -16,6 +16,8 @@ const swiper = new Swiper('.slider-wrapper', {
     prevEl: '.swiper-button-prev',
   },
 
+  
+
   breakpoints: {
     0: {
         slidesPerView: 1
@@ -27,4 +29,11 @@ const swiper = new Swiper('.slider-wrapper', {
         slidesPerView: 1
     }
   }
+});
+
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+toggle.addEventListener("click", () => {
+nav.classList.toggle("active");
 });
