@@ -173,6 +173,9 @@ nav li:first-child a:hover {
 .sidebar li:first-child a {
     color: var(--bkgnd);
 }
+.menu-btn {
+    display: none;
+}
 
 
 /* ------------------ ARTICLES ------------------ */
@@ -566,7 +569,7 @@ article.coffee {
     .hideOnMobile {
         display: none;
     }
-
+    .menu-btn {display: block;}
     p {font-size: 15px;}
     h1 {font-size: 36px;}
     h2 {font-size: 20px;}
