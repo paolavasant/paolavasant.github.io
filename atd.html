@@ -14,23 +14,21 @@
 
 <body>
 <!------- navbar ------>
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <h4>Paola Vasant</h4>
-                </a>
-            </div>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Portfolio</a></li>
-                <li><a href="index.html">About me</a></li>
-                <li><a href="index.html">cv</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee6dd"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="index.html">cv</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html" class="Logo">Paola Vasant</a></li>
+            <li class="hideOnMobile"><a href="index.html">Portfolio</a></li>
+            <li class="hideOnMobile"><a href="about.html">About me</a></li>
+            <li class="hideOnMobile"><a href="index.html">cv</a></li>
+            <li class="menu-btn" onclick=showSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#B87931"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
 
         <section class="hero-container">
             <div class="img-box hero-img">
@@ -164,7 +162,7 @@
        
         <section class="project-navigation">
             <a href="/.html" class="btn projnav prev">
-                ← Proyecto anterior
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee6dd"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg> Proyecto anterior
             </a>
             <a href="/Congreso.html" class="btn projnav next">
                 Siguiente proyecto →
@@ -173,37 +171,34 @@
    
     
 
- <!-------- FOOTER -------->
-        <footer class="footer">
-            <div class="footer-copy">
-                © 2026. All rights reserved
-            </div>
-            <div class="footer-icons">
-                <a href="mailto:paolavasant.g@gmail.com">
-                    <img src="mail.svg">
-                    <span class="social-user">
-                        paolavant.g@gmail.com
-                    </span>
-                </a>
-                <a href="https://www.behance.net/paolavasant" target="_blank">
-                    <img src="Behance.svg">
-                    <span class="social-user">
-                        /paolavasant
-                    </span>
-                </a>
-                <a href="https://www.linkedin.com/in/paola-vasant/" target="_blank">
-                    <img src="Linkedin.svg">
-                    <span class="social-user">
-                        /paolavasant
-                    </span>
-                </a>
-            </div>
-        </footer>
+<!-------- FOOTER -------->
+    <footer class="footer">
+        <div class="footer-copy"> © 2026. All rights reserved </div>
+        <div class="footer-icons">
+            <a href="mailto:paolavasant.g@gmail.com">
+                <img src="mail.svg"> <span class="social-user"> paolavant.g@gmail.com </span>
+            </a>
+            <a href="https://www.behance.net/paolavasant" target="_blank">
+                <img src="Behance.svg"><span class="social-user"> /paolavasant </span>
+            </a>
+            <a href="https://www.linkedin.com/in/paola-vasant/" target="_blank">
+                <img src="Linkedin.svg"> <span class="social-user"> /paolavasant </span>
+            </a>
+        </div>
+    </footer>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-    <script src="navigation.js"></script>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
     
 </body>
 </html>
