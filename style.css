@@ -73,3 +73,16 @@
     color: var(--pink);
     opacity: 0.5;
 }
+
+.nav {
+    color: var(--two);
+    border: 2px solid transparent;
+}
+.nav:hover {
+    background-color: var(--two);
+    color: var(--bkgnd);
+}
+
+.nav-item {
+    position: relative;
+}
