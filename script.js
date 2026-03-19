@@ -1,32 +1,32 @@
-const swiper = new Swiper('.slider-wrapper', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 40,
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".galeriaSwiper").forEach((slider) => {
+    let desktopSlides = 3; // valor por defecto
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  
-
-  breakpoints: {
-    0: {
-        slidesPerView: 1
-    },
-    800: {
-        slidesPerView: 1
-    },
-    1024: {
-        slidesPerView: 1
+    if (slider.classList.contains("cols-2")) {
+      desktopSlides = 2;
+    } else if (slider.classList.contains("cols-3")) {
+      desktopSlides = 3;
+    } else if (slider.classList.contains("cols-4")) {
+      desktopSlides = 4;
     }
-  }
+
+    new Swiper(slider, {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: false,
+
+      pagination: {
+        el: slider.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+
+      breakpoints: {
+        769: {
+          slidesPerView: desktopSlides,
+          spaceBetween: 24,
+          allowTouchMove: true,
+        }
+      }
+    });
+  });
 });

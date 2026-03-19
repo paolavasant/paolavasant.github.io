@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identidad visual | Fratelly Joyas</title>
+    <title>Fratelly Joyas | Paola Vasant</title>
     <link rel="stylesheet" href="style-2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
     <link rel="icon" type="image/svg+xml" href="/favicon2.svg">
     <link rel="apple-touch-icon" href="/favicon2.png">
@@ -45,7 +46,7 @@
                 </div>
             </section>
             <section>
-                <h2></h2>
+                <h2>Emprendimiento de joyería de plata</h2>
                     <p>Fratelly es un emprendimiento de joyería en plata fundado por tres hermanos que buscan impulsar el crecimiento de la marca mediante la apertura de puntos de venta físicos. Con este objetivo, requerían una actualización de su identidad visual que pudiera aplicarse de manera coherente en diversos materiales y soportes, como tarjetas de presentación, bolsas, cajas de regalo y stands promocionales.</p>
             </section>
             <section class="columns">
@@ -83,7 +84,7 @@
             <section class="section-block">
                 <h3>Bocetaje</h3>
                 <div class="text-block">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <p>El cliente deseaba conservar la triqueta como elemento central de la identidad, ya que representa a los tres hermanos fundadores de la marca y da origen a su nombre. <i> Fratelly, </i>que remite al concepto de fraternidad, simboliza la hermandad y el vínculo familiar que sustenta el proyecto. Con esto en mente, exploré diferentes formas de triquueta y diferentes tipografías.</p>
                 </div>
             </section>
             <section class="section-image">
@@ -102,7 +103,8 @@
 
         <article class="coffee">
             <section class="section-block">
-                <h3 class="tittle-vanilla">El imagotipo</h3>
+                <h3>El imagotipo</h3>
+                <p>Después de haber definido la forma y la tipografía, trabajé ambos elementos en conjunto con las observaciones realizadas por el cliente para presentar la estructura del imagotipo con su retícula y anatomía además de la propuesta de paleta de colores.</p>
             </section>
             <section>    
                 <div class="two-grid">
@@ -121,9 +123,10 @@
         <article>
             <section class="section-block">
                 <h3>Tipografía</h3>
+                <p></p>
             </section>
             <section>    
-                <div class="two-grid">
+                <div class="grid-gallery cols-2">
                     <div>
                         <div class="img-box"><img src="/Fratelly/Fratelly-tipo-1.svg" alt=""></div>
                         <p class="description">Tipografía sans serif moderna y versátil, añade un aspecto minimalista y limpio a la marca sin perder la elegancia.</p>
@@ -141,7 +144,7 @@
                 <h3>Paleta de colores</h3>
             </section>
             <section class="">    
-                <div class="two-grid">
+                <div class="grid-gallery cols-2">
                     <div>
                         <div class="img-box"><img src="/Fratelly/Fratelly-color.svg" alt=""></div>
                         <p class="description">Color principal de la marca.</p>
@@ -157,27 +160,33 @@
         <article>
             <section class="section-block">
                 <h3>La marca</h3>
-                <div class="text-block">
-                    
-                </div>
             </section>
-            <section>    
-                <div class="two-grid grid-4x3">
-                    <div class="img-box"><img src="/Fratelly/Card verde.jpg" alt=""></div>
-                    <div class="img-box"><img src="/Fratelly/Bag.jpg" alt=""></div>
-                    <div class="img-box"><img src="/Fratelly/Jewelry Box.jpg" alt=""></div>
-                    <div class="img-box"><img src="/Fratelly/Card-2.jpg" alt=""></div>
+            <section class="galeria-wrapper">
+                <div class="swiper galeriaSwiper slider-43 cols-2">
+                    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="Fratelly/Bag.jpg" alt="Bolsa1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="Fratelly/Card verde.jpg" alt="Card">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="Fratelly/Jewelry Box.jpg" alt="Cartel congreso 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="Fratelly/Card-2.jpg" alt="Cartel congreso 3">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
         </article>
 
         <section class="project-navigation">
-            <a href="/Congreso.html" class="btn projnav prev">
-                ← Proyecto anterior
-            </a>
-            <a href="/procytec.html" class="btn projnav next">
-                Siguiente proyecto →
-            </a>
+            <a href="Congreso.html" class="btn projnav prev"> &#8249; Anterior </a>
+            <a href="/procytec.html" class="btn projnav next"> Siguiente &#8250;</a>
         </section>
 
 <!-------- FOOTER -------->
@@ -207,6 +216,8 @@
             </div>
         </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
     <script>
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')
