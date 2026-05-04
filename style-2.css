@@ -85,6 +85,9 @@ p {
     color: var(--four);
     line-height: 1.4;
 }
+.description {
+    font-size: 14px;
+}
 .intro {
     margin: 20px 0 30px;
     font-family: "Cascadia Code";
@@ -548,9 +551,11 @@ section.destacados {
     gap: 50px;
     border-radius: 10px;
 }
-
+.img-box {
+    margin: 5% 0 2%;
+}
 .img-box img{
-    border-radius: 20px;
+    border-radius: 15px;
 }
 /* -------------------- ABOUT SECTION -------------------- */
 .about {
@@ -619,7 +624,7 @@ section.destacados {
 
 /* -------------- PROJECT NAVIGATION ------------- */
 .project-navigation {
-    margin: 0px auto;
+    margin: 5% auto 5%;
     padding: 0 0 30px;
     display: flex;
     grid-template-columns: repeat(2, 1fr);
