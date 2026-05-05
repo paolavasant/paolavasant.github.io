@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProcyTec</title>
     <link rel="stylesheet" href="style-2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
     <link rel="icon" type="image/svg+xml" href="/favicon2.svg">
     <link rel="apple-touch-icon" href="/favicon2.png">
@@ -12,10 +13,10 @@
 </head>
 
 <body>
-<!------- navbar ------>
+<!------------- NAVBAR ------------>
     <nav>
         <ul class="sidebar">
-            <li onclick=hideSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee6dd"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li onclick=hideSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E5FFBC"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="index.html">Portfolio</a></li>
             <li><a href="about.html">About me</a></li>
             <li><a href="index.html">cv</a></li>
@@ -25,11 +26,11 @@
             <li class="hideOnMobile"><a href="index.html">Portfolio</a></li>
             <li class="hideOnMobile"><a href="about.html">About me</a></li>
             <li class="hideOnMobile"><a href="/CV_Paola_Vazquez_Diseñador_UX_UI.pdf" target="_blank">Curriculum</a></li>
-            <li class="menu-btn" onclick=showSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111111"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            <li class="menu-btn" onclick=showSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E5FFBC"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     </nav>
 
-    <!-- HERO IMAGE -->
+<!------------- HERO ------------>
         <section class="project-hero">
             <img src="/home/procytec.jpg" alt="Proyecto" class="hero-bg">
             <div class="hero-overlay"></div>
@@ -40,13 +41,22 @@
                     <span class="project-tag">Web Design</span>
                 </div>
                 <div>
-                    <p> Diseño y planeación del sitio web del Departamento<br> de Procesos y Técnicas de Realización </p>
+                    <h3> Diseño y planeación del sitio web del Departamento<br> de Procesos y Técnicas de Realización </h3>
                 </div>
             </div>
         </section>
-
-        <article>
+<!------------- INTRO PROYECTO ------------>
+        <article class="intro-project">
             <section>
+                 <div>
+                    <h5>Duración:</h5> <p>6 meses</p>
+                </div>
+                <div>
+                    <h5>Mi Rol:</h5> <p>UX/UI Designer / UX Researcher / UI Designer</p>
+                </div>
+            </section>
+            <section class="text">
+                <h5>Contexto:</h5>
                 <p>El Departamento de Procesos y Técnicas de Realización (ProcyTec) es uno de los cuatro espacios de trabajo donde se concentra parte del personal de docencia de la División de Ciencias y Artes para el Diseño de la Universidad Autónoma Metropolitana, Unidad Azcapotzalco.</p>
                 <p>En este espacio conviven docentes de las licenciaturas de Arquitectura, Diseño Gráfico y Diseño Industrial, así como un amplio personal administrativo y ayudantes. Durante la gestión de la Jefatura de la Dra. Alatriste, se busca renovar la identidad visual del Departamento, siendo uno de los objetivos el rediseño del sitio web. </p>
             </section>
@@ -55,7 +65,7 @@
                         <h5>Desafíos</h5>
                         <ul>
                             <li>Transmitir elegancia y modernidad sin realizar cambios drásticos en la identidad existente.</li>
-                            <li>Adaptar la imagen de la marca a aplicaciones específicas para venta en punto físico, incluyendo empaques, material impreso y elementos de exhibición.</li>
+                            <li>???</li>
                         </ul>
                     </div>
                 <div class="text-block">
@@ -69,54 +79,134 @@
                 </section>
             </article>    
 
+<!------------- EL PROYECTO ------------>
         <article class="coffee">
-            <section class="section-block">
-                <h3>Sitemap</h3>
+            <section>
+                <h2>Empatía y Definición</h2>
+                <h5>User Persona</h5>
+                <div class="text-block">
+                    <p></p>
+                </div>
             </section>
-            <section class="section-image">
-                <div class="grid-img">
-                    <div class="img-box"><img src="/Procytec/AI-Procytec.jpg" alt="Arquitectura"></div>
+            <section class="galeria-wrapper">
+                <div class="swiper galeriaSwiper slider-23 cols-2">
+                    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-user-persona-1.jpg" alt="User Persona 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-user-persona-2.jpg" alt="User Persona 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-user-persona-3.jpg" alt="User Persona 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-user-persona-4.jpg" alt="User Persona 4">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
         </article>
 
         <article>
-            <section class="section-block">
-                <h3>Lo-fi <br> wireframes</h3>
+            <section>
+                <h5>User Journey Map</h5>
             </section>
-            <section class="section-image">   
-                <div class="two-grid">
-                    <div class="img-box"><img src="/Procytec/anterior-1.png" alt=""></div>
-                    <div class="img-box"><img src="/Procytec/anterior-2.png" alt=""></div>
+            <section class="galeria-wrapper">
+                <div class="swiper galeriaSwiper slider-23 cols-2">
+                    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="ATD/" alt="Journey Map 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/" alt="Journey Map 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/" alt="Journey Map 3">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
         </article>
 
         <article class="coffee">
-            <section class="section-block">
-                <h3>Mid-fi screen flow</h3>
+            <section>
+                <h5>Problem Statements</h5>
+            </section>
+            <section class="galeria-wrapper">
+                <div class="swiper galeriaSwiper slider-23 cols-2">
+                    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-problem-1.jpg" alt="Problem Statement 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-problem-2.jpg" alt="Problem Statement 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-problem-3.jpg" alt="Problem Statement 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-problem-4.jpg" alt="Problem Statement 4">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </article>
+
+
+        <article>
+            <section>
+                <h2>Ideación y Estructura</h2>
+                <h5>Arquitectura de Información</h5>
+                <div class="text-block">
+                    <p>Desarrollé el sitemap para definir y jerarquizar la estructura de contenidos. A través de este proceso organicé las secciones y subsecciones principales, estableciendo relaciones claras entre las páginas para facilitar una navegación intuitiva. Este mapa del sitio me permitió visualizar los posibles recorridos del usuario dentro de la plataforma y sentar las bases para el desarrollo de wireframes y prototipos.</p>
+                </div>
             </section>
             <section class="section-image">
-                <div class="grid-img">
-                    <div class="img-box"><img src="/Procytec/AI-Procytec.jpg" alt="Arquitectura"></div>
+                <div class="img-box">
+                    <img src="/ATD/AI-ATD.jpg" alt="">
+                </div>
+            </section>
+        </article>
+        
+        <article class="coffee">
+            <section class="section-block">
+                <h5>Lo-fi Wireframes</h5>
+            </section>
+            <section class="galeria-wrapper">
+                <div class="swiper galeriaSwiper slider-23 cols-2">
+                    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="ATD/atd-wireframes-01.jpg" alt="Cartel congreso 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/atd-wireframes-02.jpg" alt="Cartel congreso 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/atd-wireframes-03.jpg" alt="Cartel congreso 3">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
         </article>
 
         <article>
-            <section class="section-block">
-                <h3>User flow</h3>
+            <section>
+                <h5>Mid-fi screen flow</h5>
                 <div class="text-block">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                </div>
-            </section>
-        </article>
-
-        <article class="coffee">
-            <section class="section-block">
-                <h3>Hi-fi <br>wireframes</h3>
-                <div class="text-block">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <p>Una vez seleccionado las ideas a partir de los bocetos de wireframes, desarrollé las pantllas en mediana finalidad y con ellas un screen flow para visualizar los recorridos principales del usuario dentro del sitio y entender cómo se conectan las distintas pantallas entre sí. Este ejercicio me permitió mapear las posibles rutas de navegación, identificar puntos de acceso a la información y validar que la estructura planteada en la arquitectura de la información.</p>
                 </div>
             </section>
             <section class="section-image">
@@ -126,22 +216,61 @@
             </section>
         </article>
 
+
+        <article class="coffee">
+            <section>
+                <h2>Validación</h2>
+                <h5>Pruebas de Usabilidad</h5>
+                <div class="text-block">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+            </section>
+        </article>
+        
         <article>
-            <section class="section-block">
-                <h3>Website</h3>
+            <section>
+                <h5>Iteración</h5>
                 <div class="text-block">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                 </div>
             </section>
         </article>
 
+
+        <article class="coffee">
+            <section>
+                <h2>Diseño</h2>
+                <h5>Hi-fi wireframes</h5>
+                <div class="text-block">
+                    <p></p>
+                </div>
+            </section>
+            <section class="section-image">
+                <div class="img-box">
+                    <img src="/ATD/Hi-fi screen.png" alt="">
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <section>
+                <h2>Website</h2>
+                <div class="text-block">
+                    <p>Para conocer el sitio web completo visita:</p>
+                </div>
+                <div>
+                    <a class="website" href="https://atd.azc.uam.mx/" target="_blank">https://atd.azc.uam.mx/</a>
+                </div>
+            </section>
+        </article>
+
+<!------------- BOTONES NAVEGACION ------------->
         <section class="project-navigation">
             <a href="atd.html" class="btn projnav prev"> &#8249; Anterior </a>
-            <a href="/Fratelly.html" class="btn projnav next"> Siguiente &#8250;</a>
+            <a href="/Congreso.html" class="btn projnav next"> Siguiente &#8250;</a>
         </section>
-   
 
-<!-------- FOOTER -------->
+<!------------- FOOTER ------------->
         <footer class="footer">
             <div class="footer-copy">
                 © 2026. All rights reserved
@@ -168,6 +297,8 @@
             </div>
         </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
     <script>
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')

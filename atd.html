@@ -13,10 +13,10 @@
     </head>
 
     <body>
-<!------- navbar ------>
+<!------------- NAVBAR ------------>
         <nav>
             <ul class="sidebar">
-                <li onclick=hideSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee6dd"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick=hideSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E5FFBC"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="index.html">Portfolio</a></li>
                 <li><a href="about.html">About me</a></li>
                 <li><a href="index.html">cv</a></li>
@@ -26,10 +26,10 @@
                 <li class="hideOnMobile"><a href="index.html">Portfolio</a></li>
                 <li class="hideOnMobile"><a href="about.html">About me</a></li>
                 <li class="hideOnMobile"><a href="/CV_Paola_Vazquez_Diseñador_UX_UI.pdf" target="_blank">Curriculum</a></li>
-                <li class="menu-btn" onclick=showSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111111"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="menu-btn" onclick=showSidebar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E5FFBC"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
-
+<!------------- HERO ------------>
         <section class="project-hero">
             <img src="/home/atd_web.jpg" alt="Proyecto" class="hero-bg">
             <div class="hero-overlay"></div>
@@ -40,36 +40,123 @@
                     <span class="project-tag">Visual Design</span>
                 </div>
                 <div>
-                    <p> Diseño y desarrollo del website para el Área de Administración y Tecnología para el Diseño de la UAM Azcapotzalco </p>
+                    <h3> Diseño del sitio web para el Área de Administración y Tecnología para el Diseño. Conectando la Academia con el Diseño. </h3>
                 </div>
             </div>
         </section>
+<!------------- INTRO PROYECTO ------------>
+        <article class="intro-project">
+            <section>
+                <div>
+                    <h5>Duración:</h5> <p>4 meses</p>
+                </div>
+                <div>
+                    <h5>Mi Rol:</h5> <p>Líder de proyecto / UX Researcher / UI Designer</p>
+                </div>
+            </section>
+            <section class="text">
+                <h5>Contexto:</h5>
+                <p>El Área de Administración y Tecnología para el Diseño (ATD) de la UAM Azcapotzalco es un nodo de conocimiento interdisciplinario. Sin embargo, su presencia digital presentaba una brecha crítica: una navegación compleja y la falta de acceso a sus recursos históricos frustraban a su comunidad. Mi reto como diseñadora UX fue transformar este repositorio de conocimiento en una plataforma adaptable, intuitiva y profesional que no solo sirve como carta de presentación, sino como un puente eficiente entre alumnos, investigadores y el colectivo docente.</p>
+            </section>
+            <section class="text columns">
+                    <div class="text-block">
+                        <h5>El Problema:</h5>
+                        <p>La desactualización y la estructura rígida impedían que los alumnos encontraran a sus profesores y que los investigadores accedieran a las revistas anuales.</p>
+                    </div>
+                    <div class="text-block">
+                        <h5>La Solución:</h5>
+                        <p>Un sitio web responsive centrado en tres pilares: accesibilidad inmediata al directorio, un repositorio digital fluido y una identidad visual que refleja la excelencia de la UAM.</p>
+                    </div>
+            </section>
+        </article>
+<!------------- EL PROYECTO ------------>
+        <article class="coffee">
+            <section>
+                <h2>Empatía y Definición</h2>
+                <h5>User Persona</h5>
+                <div class="text-block">
+                    <p></p>
+                </div>
+            </section>
+            <section class="galeria-wrapper">
+                <div class="swiper galeriaSwiper slider-23 cols-2">
+                    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-user-persona-1.jpg" alt="User Persona 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-user-persona-2.jpg" alt="User Persona 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-user-persona-3.jpg" alt="User Persona 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-user-persona-4.jpg" alt="User Persona 4">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </article>
 
         <article>
             <section>
-                <p>ATD es un colectivo académico integrado por especialistas en arquitectura, diseño gráfico y diseño industrial, dedicado a la investigación, la docencia y la difusión cultural. A 15 años de su conformación, el área plantea la primera actualización de su identidad visual, con el propósito de alinearla con sus objetivos actuales y con ello la renovación integral de su sitio web, con el fin de proyectar una imagen coherente, contemporánea y representativa de su quehacer académico.</p>
+                <h5>User Journey Map</h5>
             </section>
-            <section class="columns">
-                    <div class="text-block">
-                        <h5>Desafíos</h5>
-                        <ul>
-                            <li>Transmitir modernidad, tecnología y vanguardia en el diseño sin realizar cambios drásticos en la identidad existente.</li>
-                            <li>Conectar con el público joven de la comunidad universitaria.</li>
-                        </ul>
+            <section class="galeria-wrapper">
+                <div class="swiper galeriaSwiper slider-23 cols-2">
+                    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="ATD/" alt="Journey Map 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/" alt="Journey Map 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/" alt="Journey Map 3">
+                        </div>
                     </div>
-                    <div class="text-block">
-                        <h5>Metas</h5>
-                        <ul>
-                            <li>Diseñar un sitio web que contenga la información esencial del área, de fácil acceso para el profesorado y alumnado.</li>
-                            <li>Construir un acervo de muestras artísticas virtuales.</li>
-                        </ul>
-                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
         </article>
 
         <article class="coffee">
-            <section class="section-block">
-                <h3>Sitemap</h3>
+            <section>
+                <h5>Problem Statements</h5>
+            </section>
+            <section class="galeria-wrapper">
+                <div class="swiper galeriaSwiper slider-23 cols-2">
+                    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-problem-1.jpg" alt="Problem Statement 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-problem-2.jpg" alt="Problem Statement 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-problem-3.jpg" alt="Problem Statement 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ATD/ATD-problem-4.jpg" alt="Problem Statement 4">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </article>
+
+
+        <article>
+            <section>
+                <h2>Ideación y Estructura</h2>
+                <h5>Arquitectura de Información</h5>
                 <div class="text-block">
                     <p>Desarrollé el sitemap para definir y jerarquizar la estructura de contenidos. A través de este proceso organicé las secciones y subsecciones principales, estableciendo relaciones claras entre las páginas para facilitar una navegación intuitiva. Este mapa del sitio me permitió visualizar los posibles recorridos del usuario dentro de la plataforma y sentar las bases para el desarrollo de wireframes y prototipos.</p>
                 </div>
@@ -81,9 +168,9 @@
             </section>
         </article>
         
-        <article>
+        <article class="coffee">
             <section class="section-block">
-                <h3>Lo-fi <br> Wireframes</h3>
+                <h5>Lo-fi Wireframes</h5>
             </section>
             <section class="galeria-wrapper">
                 <div class="swiper galeriaSwiper slider-23 cols-2">
@@ -105,9 +192,9 @@
             </section>
         </article>
 
-        <article class="coffee">
-            <section class="section-block">
-                <h3>Mid-fi <br>screen flow</h3>
+        <article>
+            <section>
+                <h5>Mid-fi screen flow</h5>
                 <div class="text-block">
                     <p>Una vez seleccionado las ideas a partir de los bocetos de wireframes, desarrollé las pantllas en mediana finalidad y con ellas un screen flow para visualizar los recorridos principales del usuario dentro del sitio y entender cómo se conectan las distintas pantallas entre sí. Este ejercicio me permitió mapear las posibles rutas de navegación, identificar puntos de acceso a la información y validar que la estructura planteada en la arquitectura de la información.</p>
                 </div>
@@ -119,20 +206,33 @@
             </section>
         </article>
 
+
+        <article class="coffee">
+            <section>
+                <h2>Validación</h2>
+                <h5>Pruebas de Usabilidad</h5>
+                <div class="text-block">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+            </section>
+        </article>
+        
         <article>
-            <section class="section-block">
-                <h3>User flow</h3>
+            <section>
+                <h5>Iteración</h5>
                 <div class="text-block">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                 </div>
             </section>
         </article>
 
+
         <article class="coffee">
-            <section class="section-block">
-                <h3>Hi-fi <br>wireframes</h3>
+            <section>
+                <h2>Diseño</h2>
+                <h5>Hi-fi wireframes</h5>
                 <div class="text-block">
-                    <p>Después de a ver revisado los wireframes de mediana fidelidad y verificar que cumplían para organizar la información, desarrollé las pantallas de alta fidelidad que posteriormente serían la base para el equipo de desarrollo. Esta fase fue crucial para asegurarme de aplicar correctamente una consistencia visual de la nueva identidad del colectivo.</p>
+                    <p></p>
                 </div>
             </section>
             <section class="section-image">
@@ -143,26 +243,26 @@
         </article>
 
         <article>
-            <section class="section-block">
-                <h3>Website</h3>
+            <section>
+                <h2>Website</h2>
                 <div class="text-block">
                     <p>Para conocer el sitio web completo visita:</p>
+                </div>
+                <div>
                     <a class="website" href="https://atd.azc.uam.mx/" target="_blank">https://atd.azc.uam.mx/</a>
                 </div>
             </section>
         </article>
 
 
-       
+<!------------- BOTONES NAVEGACION ------------->       
         <section class="project-navigation">
-            <a href="/Congreso.html" class="btn projnav next">
+            <a href="/procytec.html" class="btn projnav next">
                 Siguiente &#8250;
             </a>
         </section>
-   
-    
 
-<!-------- FOOTER -------->
+<!------------- FOOTER ------------->
     <footer class="footer">
         <div class="footer-copy"> © 2026. All rights reserved </div>
         <div class="footer-icons">
